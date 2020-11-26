@@ -48,3 +48,6 @@ if(length(new.packages)) {
 
 update.packages(ask = FALSE, type = "binary")
 
+print("###########################")
+print("### Pacotes atualizados ###")
+print("###########################")
