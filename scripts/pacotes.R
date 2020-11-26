@@ -7,12 +7,25 @@
 # autor: Marcus Nunes 
 # site:  https://marcusnunes.me
 
-pacotes.necessarios <- c("tidyverse", 
-                         "tidymodels",
-                         "caret",
-                         "e1071",
-                         "randomForest",
-                         "kknn")
+pacotes.necessarios <- c("caret", 
+                         "caretEnsemble", 
+                         "e1071", 
+                         "factoextra", 
+                         "GGally", 
+                         "ggdendro", 
+                         "ggfortify", 
+                         "gridExtra", 
+                         "kknn", 
+                         "mlbench", 
+                         "NbClus", 
+                         "onehot", 
+                         "pROC", 
+                         "randomForest", 
+                         "rvest", 
+                         "scales", 
+                         "stringr", 
+                         "tidymodels", 
+                         "tidyverse")
 
 pacotes.novos <- pacotes.necessarios[!(pacotes.necessarios %in% installed.packages()[,"Package"])]
 
