@@ -7,6 +7,12 @@
 # autor: Marcus Nunes 
 # site:  https://marcusnunes.me
 
+# repositorio de pacotes
+
+options(repos = c(CRAN = "http://cran.rstudio.com"))
+
+# lista de pacotes necessarios
+
 pacotes.necessarios <- c("caret", 
                          "caretEnsemble", 
                          "e1071", 
@@ -27,6 +33,8 @@ pacotes.necessarios <- c("caret",
                          "tidymodels", 
                          "tidyverse")
 
+# instalacao dos pacotes que faltam na maquina
+
 pacotes.novos <- pacotes.necessarios[!(pacotes.necessarios %in% installed.packages()[,"Package"])]
 
 if(length(new.packages)) {
@@ -36,5 +44,7 @@ if(length(new.packages)) {
   print("##########################")
 } 
 
+# atualizacao dos pacotes jah instalados
 
+update.packages(ask = FALSE, type = "binary")
 
