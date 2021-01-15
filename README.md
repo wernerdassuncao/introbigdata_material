@@ -51,7 +51,7 @@ O material da disciplina foi produzido a partir de várias referências espalhad
 ## Livros
 
 * Hastie, T. e Tibshirani, R. (2009). _The Elements of Statistical Learning: Data Mining, Inference, and Prediction_. Springer. [link](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
-* Izbicki, R. e Santos, T. M. dos (2020) _Aprendizado de máquina: uma abordagem estatística_. São Carlos. [link](http://www.rizbicki.ufscar.br/AME.pdf)
+* Izbicki, R. e dos Santos, T. M. (2020) _Aprendizado de máquina: uma abordagem estatística_. São Carlos. [link](http://www.rizbicki.ufscar.br/AME.pdf)
 * James, G., Witten, D., Hastie, T., e Tibshirani, R. (2014). _An Introduction to Statistical Learning with Applications in R_. Springer.
 * Kuhn, M. e Johnson, K. (2013). _Applied Predictive Modeling_. Springer.
 * Lantz, B. (2013). _Machine Learning with R_. Packt Publishing.
