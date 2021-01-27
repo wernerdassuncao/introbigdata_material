@@ -63,7 +63,7 @@ populacao <- url %>%
 populacao <- populacao %>%
   html_table(fill=TRUE)
 
-populacao <- populacao[[2]]
+populacao <- populacao[[1]]
 
 names(populacao) <- c("Posição", "Código do IBGE", "Município", "Unidade federativa", "População")
 
@@ -90,14 +90,15 @@ tail(area)
 # utilizar `Município` e `Unidade federativa` nao funciona porque
 # algumas cidades estao com grafias difernetes nos dois data frames
 
-dados <- left_join(populacao, area, by = "Código do IBGE")
+dados <- left_join(populacao, area, by = c("Município", "Unidade federativa"))
 
 head(dados)
+
 
 # 4
 
 dados <- dados %>%
-  select(Município.x, `Unidade federativa.x`, `Área (km²)`, População)
+  select(Município, `Unidade federativa`, `Área (km²)`, População)
 
 names(dados) <- c("municipio", "estado", "area", "populacao")
 
